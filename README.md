@@ -13,4 +13,7 @@ This package can be installed with the go get command:
 
     go get github.com/hideo55/go-popcount
 
+License
+-----------
 
+MIT License
