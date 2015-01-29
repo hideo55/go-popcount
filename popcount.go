@@ -2,7 +2,7 @@
 // Using hardware POPCNT instruction if available it.
 package popcount
 
-// CountSlice counts number of non-zero bits in slice of 64bit unsigned integer.
+// CountSlice function counts number of non-zero bits in slice of 64bit unsigned integer.
 func CountSlice(s []uint64) uint64 {
 	count := uint64(0)
 	for _, x := range s {
@@ -11,7 +11,7 @@ func CountSlice(s []uint64) uint64 {
 	return count
 }
 
-// Count counts number of non-zero bits in 64bit unsigned integer.
+// Count function counts number of non-zero bits in 64bit unsigned integer.
 func Count(x uint64) uint64 {
 	return popcnt64(x)
 }
