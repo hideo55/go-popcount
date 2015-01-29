@@ -1,6 +1,8 @@
 go-popcount
 ===========
 
+[![Build Status](https://travis-ci.org/hideo55/go-popcount.svg?branch=master)](https://travis-ci.org/hideo55/go-popcount)
+
 Description
 ------------
 
