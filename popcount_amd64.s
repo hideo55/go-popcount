@@ -8,7 +8,8 @@ RET
 
 // func havePOPCNT() bool
 TEXT ·havePOPCNT(SB),4,$0
-MOVQ $1, AX
+XORQ AX, AX
+INCL AX
 CPUID
 SHRQ $23, CX
 ANDQ $1, CX
