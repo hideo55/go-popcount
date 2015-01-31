@@ -3,13 +3,12 @@
 package popcount
 
 func havePOPCNT() bool
-
-var popcnt = havePOPCNT()
-
 func popcnt64ASM(x uint64) uint64
 
+var asm = havePOPCNT()
+
 func popcnt64(x uint64) uint64 {
-	if popcnt {
+	if asm {
 		return popcnt64ASM(x)
 	}
 	return popcnt64Go(x)
