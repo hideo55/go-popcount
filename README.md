@@ -2,6 +2,7 @@ go-popcount
 ===========
 
 [![Build Status](https://travis-ci.org/hideo55/go-popcount.svg?branch=master)](https://travis-ci.org/hideo55/go-popcount)
+[![GoDoc](http://godoc.org/github.com/hideo55/go-popcount?status.png)](http://godoc.org/github.com/hideo55/go-popcount)
 
 Description
 ------------
