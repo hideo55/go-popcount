@@ -6,7 +6,7 @@ import (
 )
 
 func TestPopCountCompare(t *testing.T) {
-	if !asm {
+	if !havePOPCNT() {
 		t.Skip()
 	}
 
