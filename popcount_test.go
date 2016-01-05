@@ -1,8 +1,6 @@
 package popcount
 
-import (
-	"testing"
-)
+import "testing"
 
 type (
 	testCase64 struct {
@@ -53,5 +51,11 @@ func TestPopCountSlice(t *testing.T) {
 		if count != tc.n {
 			t.Error("Expected", tc.n, "got", count)
 		}
+	}
+}
+
+func BenchmarkGeneric(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		popcnt64Go(0x123456789ABCDEF)
 	}
 }
