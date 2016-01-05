@@ -27,3 +27,9 @@ func BenchmarkASM(b *testing.B) {
 		popcnt64ASM(0x123456789ABCDEF)
 	}
 }
+
+func BenchmarkASMIndirect(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		popcnt64(0x123456789ABCDEF)
+	}
+}
